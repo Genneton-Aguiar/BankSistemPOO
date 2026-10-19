@@ -70,7 +70,7 @@ public class Main {
                 listaContas.add(novaConta);
                 System.out.println("Conta cadastrada com sucesso!");
 
-            } else if (opcao == 2) {
+            } else if (opcao == 2) {//LISTAR CONTAS  
                 if (listaContas.isEmpty()) {
                     System.out.println("Não existem contas cadastradas");
                 } else {
@@ -82,7 +82,7 @@ public class Main {
                     }
                 }
 
-            } else if (opcao == 3) {
+            } else if (opcao == 3) {//DEPOSITAR
                 if (listaContas.isEmpty()) {
                     System.out.println("Não existem contas cadastradas");
                     continue;
@@ -99,7 +99,7 @@ public class Main {
                     System.out.println("Conta não encontrada.");
                 }
 
-            } else if (opcao == 4) {
+            } else if (opcao == 4) {//SACAR 
                 if (listaContas.isEmpty()) {
                     System.out.println("Não existem contas cadastradas");
                     continue;
@@ -116,7 +116,7 @@ public class Main {
                     System.out.println("Conta não encontrada.");
                 }
 
-            } else if (opcao == 5) {
+            } else if (opcao == 5) {//TRANSFERÊNCIA 
                 if (listaContas.size() < 2) {
                     System.out.println("É preciso ter no minimo 2 contas distintas para prosseguir com a operação.");
                     continue;
@@ -137,7 +137,7 @@ public class Main {
                     System.out.println("Conta de origem ou destino não encontrada.");
                 }
 
-            } else if (opcao == 0) {
+            } else if (opcao == 0) {// FINALIZAR 
                 System.out.println("Sistema encerrado!");
             } else {
                 System.out.println("Opção inválida!");

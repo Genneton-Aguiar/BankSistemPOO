@@ -66,7 +66,7 @@ public class Main {
                 double saldo = scanner.nextDouble();
                 scanner.nextLine(); // Limpa o buffer
 
-                ContaBancaria novaConta = new ContaBancaria(numConta, saldo, cliente);
+                ContaBancaria novaConta = new ContaBancaria(numConta, saldo, cliente);//CRIA A CONTA E ADICIONA NO ARRAY
                 listaContas.add(novaConta);
                 System.out.println("Conta cadastrada com sucesso!");
 

@@ -3,13 +3,13 @@ public class Cliente {
     private String nome;
     private String cpf;
 
-    // Construtor Padrão (sem parâmetros)
+    // Construtor Padrão (sem parâmetros) SEM INFORMAR
     public Cliente() {
     }
 
     // Construtor Parametrizado
     public Cliente(String nome, String cpf) {
-        this.nome = nome;
+        this.nome = nome;//INFORMAÇÕES NO OBJETO
         this.cpf = cpf;
     }
 
@@ -30,7 +30,7 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    //exibir dados do cliente
+    //exibir dados do cliente VISOR
     public void exibirInformacoes() {
         System.out.println("Cliente: " + nome + " | CPF: " + cpf);
     }
